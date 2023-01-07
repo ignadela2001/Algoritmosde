@@ -4,6 +4,16 @@ class City:
     def __init__(self, name):
         self.name = name
 
+# Nombres de las ciudades
+names = ['Concepción del Uruguay', 'Rodas', 'Tulum', 'Phuket', 'Tokio', 'Atenas',
+         'Orlando', 'Santiago', 'Moscú', 'Bombinhas', 'Londres', 'Paris', 'Sídney', 'Berlín']
+# Matrices de distancias y costos
+distances = [[0, 5678, 7012, 5623, 9834, 2945, 4657, 6789, 1234, 5678, 9012, 3456, 7890, 1234],
+             [5678, 0, 1234, 9876, 3456, 6789, 7890, 2345, 6789, 1234, 5678, 9012, 3456, 7890],
+             [7012]]
+costs = [[]]
+
+
 def create_cities(names, distances, costs):
     cities = []
     for i in range(len(names)):
@@ -55,12 +65,5 @@ def create_cities(names, distances, costs):
         cities.append(city)
     return cities
 
-# Nombres de las ciudades
-names = ['Concepción del Uruguay', 'Rodas', 'Tulum', 'Phuket', 'Tokio', 'Atenas',
-         'Orlando', 'Santiago', 'Moscú', 'Bombinhas', 'Londres', 'Paris', 'Sídney', 'Berlín']
-# Matrices de distancias y costos
-distances = [[0, 5678, 7012, 5623, 9834, 2945, 4657, 6789, 1234, 5678, 9012, 3456, 7890, 1234],
-             [5678, 0, 1234, 9876, 3456, 6789, 7890, 2345, 6789, 1234, 5678, 9012, 3456, 7890],
-             [7012]]
-costs = [[]]
+
 
